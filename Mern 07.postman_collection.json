@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "49591919-a96e-4afd-8cb5-61b47880ab47",
+		"name": "Mern 07",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38179196"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Name\": \"John\",\r\n  \"Roll\": \"Student\",\r\n  \"Class\": \"10\",\r\n  \"Remark\": \"Excellent performance\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/InsertStudent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"InsertStudent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5050/uploadsingle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5050/uploadsingle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"uploadsingle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5050/uploads",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5050/uploads",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"uploads"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1.Backend_Project_Multer_File_Uploader_M_34_B_7",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": [
+								"/C:/Users/User/Pictures/Screenshots/Screenshot 2024-12-15 234646.png",
+								"/C:/Users/User/Pictures/Screenshots/Screenshot 2024-12-14 181326.png",
+								"/C:/Users/User/Pictures/Screenshots/Screenshot 2024-12-14 181503.png",
+								"/C:/Users/User/Pictures/Screenshots/Screenshot 2024-12-14 183152.png",
+								"/C:/Users/User/Pictures/Screenshots/Screenshot 2024-12-15 234646.png"
+							]
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/file-upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"file-upload"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
